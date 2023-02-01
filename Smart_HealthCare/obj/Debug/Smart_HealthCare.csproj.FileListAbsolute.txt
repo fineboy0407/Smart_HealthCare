@@ -28,3 +28,6 @@ D:\Workspace\Smart_HealthCare\Smart_HealthCare\bin\Debug\MahApps.Metro.IconPacks
 D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.csproj.CopyComplete
 D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare_MarkupCompile.lref
 D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\App.baml
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\TextInfo.baml
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\TextInfo.g.cs
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\GeneratedInternalTypeHelper.g.cs

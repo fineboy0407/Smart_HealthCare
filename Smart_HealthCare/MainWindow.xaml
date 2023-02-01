@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:uc="clr-namespace:Smart_HealthCare.UserControls"
         Height="760" Width="1280" Background="Transparent" ResizeMode="NoResize"
         AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen"
         >
@@ -168,7 +169,10 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 
-                                <!-- Text info Cards-->
+                                <!-- Text info Cards -->
+                                <uc:TextInfo TextTop="Total Time" TextMiddle="748 Hr" TextBottom="April" IsActive="False"/>
+                                <uc:TextInfo TextTop="Total Steps" TextMiddle="9.718 St" TextBottom="April" IsActive="True" Grid.Column="1"/>
+                                <uc:TextInfo TextTop="Target" TextMiddle="9200 St" TextBottom="April" IsActive="False" Grid.Column="2"/>
                             </Grid>
                         </Grid>
                     </Border>
