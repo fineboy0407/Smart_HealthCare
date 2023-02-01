@@ -1,0 +1,15 @@
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\bin\Debug\Smart_HealthCare.exe.config
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\bin\Debug\Smart_HealthCare.exe
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\bin\Debug\Smart_HealthCare.pdb
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.csproj.AssemblyReference.cache
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.csproj.SuggestedBindingRedirects.cache
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\MainWindow.baml
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\MainWindow.g.cs
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\App.g.cs
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare_MarkupCompile.cache
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.g.resources
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.Properties.Resources.resources
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.csproj.GenerateResource.cache
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.csproj.CoreCompileInputs.cache
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.exe
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\Smart_HealthCare.pdb
