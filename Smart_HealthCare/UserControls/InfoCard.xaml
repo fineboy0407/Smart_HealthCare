@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="Smart_HealthCare.UserControls.InfoCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             Name="infoCard">
+    <Grid x:Name="grid" Margin="8 0">
+        <!-- Header Section -->
+        <Border CornerRadius="20" Background="#7163ba" Width="60" Height="60" VerticalAlignment="Top" Margin="0 -30 0 0" Panel.ZIndex="1">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="3" Opacity="0.3" Direction="270" Color="#716eba"/>
+            </Border.Effect>
+
+            <Icon:PackIconMaterial Kind="{Binding ElementName=infoCard, Path=Icon}" Width="30" Height="30" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+        
+        <!-- Purple Border-->
+        <Border x:Name="border" BorderThickness="1" BorderBrush="#7163ba" CornerRadius="20" Margin="-5">
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=grid, Path=IsMouseOver}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding ElementName=infoCard, Path=IsActive}" Value="True">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+        </Border>
+        
+        <!-- Main Section -->
+        <Border Background="White" CornerRadius="20" Padding="10">
+            <StackPanel>
+               <!-- Dots Button -->
+                <Button Style="{StaticResource dotsButton}">
+                    <Icon:PackIconMaterial Kind="DotsVertical"/>
+                </Button>
+                
+                <!-- Titles -->
+                <TextBlock Text="{Binding ElementName=infoCard,Path=Title}" Foreground="#5d5382" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                <TextBlock Text="{Binding ElementName=infoCard, Path=Desc}" Foreground="#958ead" HorizontalAlignment="Center" Margin="0 5 0 10"/>
+            
+                <!-- Top Slider Text -->
+                <Grid Margin="7 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Progress" Foreground="#625986"/>
+                    <TextBlock Text="{Binding ElementName=infoCard, Path=Percentage}" Foreground="#625986" Grid.Column="1" TextAlignment="Right"/>
+                </Grid>
+                
+                <!-- Slider -->
+                <Slider Style="{DynamicResource SliderStyle1}" IsSelectionRangeEnabled="True" SelectionEnd="{Binding ElementName=infoCard, Path=Value}"/>
+                
+                <!-- Sub Slider Section -->
+                <Grid Margin="6 3 6 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+
+                <TextBlock Foreground="#958ead" VerticalAlignment="Center" FontSize="11" Text="{Binding ElementName=infoCard, Path=BottomText}"/>
+                <Button Content="{Binding ElementName=infoCard, Path=Days}" Grid.Column="1" HorizontalAlignment="Right" Style="{StaticResource cardButton}"/>
+
+            </StackPanel>
+        </Border>
+        
+        
+        
+        
+        
+    </Grid>
+</UserControl>

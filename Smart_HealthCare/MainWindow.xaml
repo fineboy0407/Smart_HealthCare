@@ -177,6 +177,99 @@
                         </Grid>
                     </Border>
                     
+                    <!-- Middle Right Section -->
+                    <Grid Grid.Column="2" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <!-- Top Box -->
+                        <Border CornerRadius="30" Background="#7163ba">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Background="#8d82c8" CornerRadius="22" Width="70" Height="70" Margin="17" BorderThickness="1" BorderBrush="#aea6d8">
+                                    <Icon:PackIconMaterial Kind="ShoeCleat" Width="35" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                </Border>
+
+                                <TextBlock Text="Daily Jogging" FontSize="20" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        
+                        <!-- Bottom Box -->
+                        <Border CornerRadius="30" Background="#e95e89" Grid.Row="1" Margin="0 20 0 50" ClipToBounds="True">
+                            <Border.Clip>
+                                <RectangleGeometry RadiusX="30" RadiusY="30" Rect="0,0,271.9,250.45"/>
+                            </Border.Clip>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Border CornerRadius="30" Background="#fd91b3" VerticalAlignment="Top" BorderThickness="1" BorderBrush="#fc9cba">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Border Background="#feaec7" CornerRadius="25" Width="70" Height="70" Margin="20" BorderBrush="#fec5d6" BorderThickness="1">
+                                            <Icon:PackIconMaterial Kind="Run" Width="35" Height="35" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                                        </Border>
+
+                                        <TextBlock Text="My Jogging" FontSize="20" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Border>
+                                
+                                <!-- My Chart -->
+                                <lvc:CartesianChart LegendLocation="None" Margin=".7" Grid.Row="1" DataTooltip="{x:Null}">
+                                    <lvc:CartesianChart.AxisX>
+                                        <lvc:Axis ShowLabels="False">
+                                            <lvc:Axis.Separator>
+                                                <lvc:Separator StrokeThickness="0"/>
+                                            </lvc:Axis.Separator>
+                                        </lvc:Axis>
+                                    </lvc:CartesianChart.AxisX>
+
+                                    <lvc:CartesianChart.AxisY>
+                                        <lvc:Axis ShowLabels="False" MinValue="0">
+                                            <lvc:Axis.Separator>
+                                                <lvc:Separator StrokeThickness="0"/>
+                                            </lvc:Axis.Separator>
+                                        </lvc:Axis>
+                                    </lvc:CartesianChart.AxisY>
+
+                                    <lvc:CartesianChart.Series>
+                                        <lvc:LineSeries StrokeThickness="2" PointGeometrySize="0" Values="10,10,50,30,100,80,120,110">
+                                            <lvc:LineSeries.Fill>
+                                                <LinearGradientBrush>
+                                                    <GradientStop Color="#e95e89" Offset="0"/>
+                                                    <GradientStop Color="#ef779c" Offset="0.9"/>
+                                                </LinearGradientBrush>
+                                            </lvc:LineSeries.Fill>
+
+                                            <lvc:LineSeries.Stroke>
+                                                <LinearGradientBrush>
+                                                    <GradientStop Color="#e95e89" Offset="0"/>
+                                                    <GradientStop Color="#ee7fa2" Offset="0.9"/>
+                                                </LinearGradientBrush>
+                                            </lvc:LineSeries.Stroke>
+                                        </lvc:LineSeries>
+                                    </lvc:CartesianChart.Series>
+                                </lvc:CartesianChart>
+                                
+                                <!-- Titles -->
+                                <StackPanel Grid.Row="1" Margin="30 0 0 0" VerticalAlignment="Center">
+                                    <TextBlock Foreground="#fbc8d9" FontSize="14" Text="Total Time"/>
+                                    <TextBlock Foreground="#ffffff" FontSize="24" FontWeight="SemiBold" Text="748 Hr"/>
+                                    <TextBlock Foreground="#fbc8d9" FontSize="16" FontWeight="SemiBold" Text="July"/>
+                                </StackPanel>
+
+                                <Icon:PackIconMaterial Kind="ChevronRightCircleOutline" Foreground="#ffffff" Width="28" Height="28" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 45 25 0"/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    
+                    <!-- Bottom Info Cards -->
+                    <uc:InfoCard Grid.Column="0" Grid.Row="2" Title="Bicycle Drill" Desc="36 km / weeks" Percentage="45%" BottomText="17 / 36 km" Days="2 days left" Icon="Bike" Value="5"/>
+                    <uc:InfoCard Grid.Column="1" Grid.Row="2" Title="Joggin Hero" Desc="12 km / month" Percentage="13%" BottomText="2 / 12 km" Days="17 days left" Icon="Run" Value="3" IsActive="True"/>
+                    <uc:InfoCard Grid.Column="2" Grid.Row="2" Title="Healthy Busy" Desc="3600 steps / weeks" Percentage="90%" BottomText="3200 / 3600 steps" Days="3 days left" Icon="ShoeSneaker" Value="9"/>
                 </Grid>
 
                 <!-- Right Section -->
