@@ -21,6 +21,5 @@ namespace Smart_HealthCare
             }
         }
 
-
     }
 }
