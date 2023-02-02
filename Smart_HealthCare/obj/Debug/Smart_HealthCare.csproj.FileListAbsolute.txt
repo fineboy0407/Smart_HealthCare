@@ -33,3 +33,5 @@ D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\TextInfo.g
 D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\InfoCard.baml
 D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\InfoCard.g.cs
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\UserCard.baml
+D:\Workspace\Smart_HealthCare\Smart_HealthCare\obj\Debug\UserControls\UserCard.g.cs

@@ -56,8 +56,14 @@
                             <Button Style="{StaticResource menuButton}">
                                 <Icon:PackIconMaterial Kind="AlarmMultiple" Style="{StaticResource menuButtonIcon}"/>
                             </Button>
-
                         </StackPanel>
+
+                        <Separator Background="#877cc5" Margin="20 0 20 90" Height="0.8" VerticalAlignment="Bottom"/>
+
+                        <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" Margin="0 0 0 25" >
+                            <Icon:PackIconMaterial Kind="LocationExit" Style="{StaticResource menuButtonIcon}"/>
+                        </Button>
+
                     </Grid>
                 </Border>
 
@@ -198,7 +204,7 @@
                         <!-- Bottom Box -->
                         <Border CornerRadius="30" Background="#e95e89" Grid.Row="1" Margin="0 20 0 50" ClipToBounds="True">
                             <Border.Clip>
-                                <RectangleGeometry RadiusX="30" RadiusY="30" Rect="0,0,271.9,250.45"/>
+                                <RectangleGeometry RadiusX="30" RadiusY="30" Rect="0,0,271.9,235.45"/>
                             </Border.Clip>
 
                             <Grid>
@@ -218,7 +224,7 @@
                                 </Border>
                                 
                                 <!-- My Chart -->
-                                <lvc:CartesianChart LegendLocation="None" Margin=".7" Grid.Row="1" DataTooltip="{x:Null}">
+                                <lvc:CartesianChart LegendLocation="None" Margin="-7" Grid.Row="1" DataTooltip="{x:Null}">
                                     <lvc:CartesianChart.AxisX>
                                         <lvc:Axis ShowLabels="False">
                                             <lvc:Axis.Separator>
@@ -273,6 +279,56 @@
                 </Grid>
 
                 <!-- Right Section -->
+                <Border Background="White" Grid.Column="2" CornerRadius="0 40 40 0">
+                    <StackPanel>
+                        <!-- Top Title Bar -->
+                        <Grid Margin="10 30 0 5">
+                            <Icon:PackIconMaterial Kind="AccountGroupOutline" Style="{StaticResource titleIcon}"/>
+                            <TextBlock Text="Friend" Margin="40 0 0 0" Style="{StaticResource titleText}"/>
+                            <Button Content="View All" Style="{StaticResource titleButton}"/>
+                        </Grid> 
+                        
+                        <!-- Top Buttons -->
+                        <Border CornerRadius="20" Background="#ebecf0" Padding="0" Margin="20 15">
+                            <Grid Margin="10 0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Content="Activities" Background="#7163ba" Foreground="White" Style="{StaticResource tabButton}"/>
+                                <Button Content="Online" Grid.Column="1" Style="{StaticResource tabButton}"/>
+                            </Grid>
+                        </Border>
+                        
+                        <!-- Users Info -->
+                        <StackPanel>
+                            <uc:UserCard FullName="Dennis Reynolds" Title="Weekly Bicycle" Time="10 min ago" Image="/Images/avatar (3).png"/>
+                            <uc:UserCard FullName="Levi lee" Title="Slow Jogging" Time="34 min ago" Image="/Images/avatar (5).png"/>
+                            <uc:UserCard FullName="Araki Mitsuo" Title="Morning Swim" Time="1 hr ago" Image="/Images/43.jpg"/>
+                            <uc:UserCard FullName="Sahran Shennon" Title="Quick Sprint" Time="27 min ago" Image="/Images/22.jpg"/>
+                            <uc:UserCard FullName="Moor William" Title="Hiking" Time="3 day ago" Image="/Images/60.jpg"/>
+                        </StackPanel>
+
+                        <Separator Background="#e7e5f3" Margin="20 15" Height="0.8" />
+                        
+                        <!-- Bottom Title Bar -->
+                        <Grid Margin="10 0 0 5">
+                            <Icon:PackIconMaterial Kind="MapMarkerOutline" Style="{StaticResource titleIcon}"/>
+                            <TextBlock Text="Google Map" Margin="40 0 0 0" Style="{StaticResource titleText}"/>
+                            <Button Content="View" Margin="0 3 15 0" Style="{StaticResource titleButton}"/>
+                        </Grid>
+                        
+                        <!-- Map Image -->
+                        <Border CornerRadius="10" Height="125" Margin="25 10">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Images/map.PNG"/>
+                            </Border.Background>
+                        </Border>
+                        
+                        
+                    </StackPanel>
+                </Border>
                 
             </Grid>
         </Border>

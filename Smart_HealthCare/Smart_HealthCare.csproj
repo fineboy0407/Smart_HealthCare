@@ -73,6 +73,9 @@
     <Compile Include="UserControls\TextInfo.xaml.cs">
       <DependentUpon>TextInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserCard.xaml.cs">
+      <DependentUpon>UserCard.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,6 +93,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\TextInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -132,6 +139,9 @@
     <Resource Include="Images\42.jpg" />
     <Resource Include="Images\43.jpg" />
     <Resource Include="Images\60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\map.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
